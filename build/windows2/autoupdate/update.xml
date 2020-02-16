@@ -1,0 +1,15 @@
+<installerInformation>
+    <versionId>1</versionId>
+    <version>1.0.0</version>
+    <platformFileList>
+        <platformFile>
+            <filename>ioBroker-2.0-windows-installer.exe</filename>
+            <platform>windows</platform>
+        </platformFile>
+    </platformFileList>
+    <downloadLocationList>
+        <downloadLocation>
+            <url>http://iobroker.live/images/win/</url>
+        </downloadLocation>
+    </downloadLocationList>
+</installerInformation>

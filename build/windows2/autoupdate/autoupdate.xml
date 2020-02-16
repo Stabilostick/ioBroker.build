@@ -1,0 +1,25 @@
+<autoUpdateProject>
+  <fullName>ioBroker for Windows autoupdater</fullName>
+  <shortName>ioBroker</shortName>
+  <vendor>ioBroker GmbH</vendor>
+  <version>1.0</version>
+  <rebootRequired>0</rebootRequired>
+  <requireInstallationByRootUser>1</requireInstallationByRootUser>
+  <singleInstanceCheck>1</singleInstanceCheck>
+  <defaultLanguage>auto</defaultLanguage>
+  <width>630</width>
+  <height>480</height>
+  <disableSplashScreen>1</disableSplashScreen>
+  <windowsResourceProductName>ioBroker for Windows autoupdater</windowsResourceProductName>
+  <windowsResourceOriginalFilename>autoupdate-windows.exe</windowsResourceOriginalFilename>
+  <windowsExecutableIcon>../pics/iobrokerlogo48_ekH_icon.ico</windowsExecutableIcon>
+  <leftImage>../pics/ioBrokerSkyLightBlue.png</leftImage>
+  <logoImage>../pics/ioBrokerLogo48.png</logoImage>
+  <outputDirectory>D:/n/output</outputDirectory>
+  <postUpdateDownloadActionList>
+    <runProgram>
+      <program>${downloadedFilePath}</program>
+      <programArguments>--checkForUpdate no &amp;</programArguments>
+    </runProgram>
+  </postUpdateDownloadActionList>
+</autoUpdateProject>

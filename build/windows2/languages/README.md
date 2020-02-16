@@ -1,0 +1,1 @@
+Folder with files containing language dependend strings.

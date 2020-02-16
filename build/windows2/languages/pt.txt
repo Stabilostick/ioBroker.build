@@ -1,0 +1,145 @@
+Installer.Welcome.Text=Bem-vindo ao assistente de configuração do ioBroker.\n\nioBroker é um servidor central para residências inteligentes e automação predial, ajudando no dia à dia.\n\nCom o ioBroker, você obtém:\n\n   - uma solução IOT poderosa, bem fácil de gerenciar\n   - uma interface fácil de entender\n   - integração fácil com sistemas e serviços existentes\n   - design modular\n   - visualizações baseadas na web\n   - acesso móvel\n   - conectividade com Alexa, Homekit e muitos outros sistemas domésticos inteligentes\n   -  ajuda de uma comunidade grande e ativa\n\n\nSetup Version: ${project.version}
+
+Component.Group.global.description=Ferramentas globais
+Component.download.title=Download de dados ...
+Component.installation.title=Instalação em andamento. Por favor, espere ...
+Component.decompression.title=Extraindo dados ...
+
+Component.dotNet.explanation=Microsoft .NET 4.8
+Component.dotNet.description=Microsoft .NET 4.8 (download, approx. 112MB)
+Component.dotNet.detailedDescription=Microsoft Visual Studio 2017 Installer exige Microsoft .NET Framework versão 4.5.1 ou mais recente para ser executado.
+Component.dotNet.download.error=Erro ao fazer o download do Microsoft .NET 4.8
+Component.dotNet.install.error=Erro ao instalar o Microsoft .NET 4.8
+
+Component.Git.explanation=Git ${gittargetversion}
+Component.Git.description=Git ${gittargetversion} (download, approx. 46MB)
+Component.Git.detailedDescription=O Git é usado pelo npm para baixar recursos adicionais
+Component.Git.download.error32=Erro ao fazer o download do 'https://github.com/git-for-windows/git/releases/download/v2.24.0.windows.2/Git-2.24.0.2-32-bit.exe'
+Component.Git.download.error64=Erro ao fazer o download do 'https://github.com/git-for-windows/git/releases/download/v2.24.0.windows.2/Git-2.24.0.2-64-bit.exe'
+Component.Git.install.error=Erro ao instalar o Git ${gittargetversion}
+
+Component.Bonjour.description=Apple Bonjour e Bonjour SDK
+Component.Bonjour.progressText=Instalando Apple Bonjour e Bonjour SDK
+Component.Bonjour.install.error=Erro ao instalar o Apple Bonjour.
+
+Component.OpenSSL.description=OpenSSL 1.0.2q
+Component.OpenSSL.progressText=OpenSSL 1.0.2q
+
+Component.VisualStudio.explanation=Microsoft VisualStudio BuildTools 2017
+Component.VisualStudio.description=Microsoft VisualStudio BuildTools 2017 (download, approx. 1.4GB)
+Component.VisualStudio.detailedDescription=Microsoft Visual Studio 2017 Installer é necessário para baixar e instalar Visual Studio 2017 Build Tools.
+Component.VisualStudio.download.error=Erro ao fazer o download do Microsoft Visual Studio 2017 Installer
+Component.VisualStudio.progressText=Microsoft VisualStudio BuildTools 2017 - baixando e instalando até 1,4 GB de dados agora
+Component.VisualStudio.install.error=Erro ao instalar o Microsoft Visual Studio BuildTools 2017
+
+Component.ioBrokerCG.description=ioBroker(${instance})
+Component.ioBrokerCG.detailedDescription=ioBroker Servidor de automação
+
+Component.Python.description=Python 2.7.17
+Component.Python.detailedDescription=Python 2.7.17 para o processo de construção do node-gyp
+Component.Python.progressText=Python 2.7.17
+
+Component.VCredist.progressText=Instalando Microsoft Visual C ++ 2008 Redistributable
+Component.VCredist.install.error=Erro ao instalar o Microsoft Visual C ++ 2008 Redistributable
+
+Component.NodeJS.description=Node.js 10.17.0
+Component.NodeJS.detailedDescription=Node.js 10.17.0 JavaScript Runtime Environment
+Component.NodeJS.progressText=Node.js 10.17.0
+Component.NodeJS.progressText.config=Configurando o Node.js 10.17.0
+Component.NodeJS.progressText.npmregistry=Alterar o registro do npm para os países do leste
+
+Component.ioBrokerCore.description=ioBroker 2.1.0
+Component.ioBrokerCore.detailedDescription=ioBroker (programa e bancos de dados)
+Component.ioBrokerCore.progressText=ioBroker Servidor Core
+Component.ioBrokerCore.startMenuShortcut.cmdcomment=Abrir a linha de commando do ioBroker(${instance})
+Component.ioBrokerCore.startMenuShortcut.cmdname=Linha de commando do ioBroker(${instance})
+Component.ioBrokerCore.startMenuShortcut.comment=ioBroker(${instance}) no navegador da web
+Component.ioBrokerCore.startMenuShortcut.name=ioBroker(${instance})
+
+Component.ioBrokerCore.init.title=ioBroker está sendo inicializado ...
+Component.ioBrokerCore.init.progressText=Instalação do banco de dados e configuração inicial
+Component.ioBrokerCore.init.error=A inicialização do ioBroker falhou.
+
+Component.ioBrokerCore.file.security=Segurança do sistema de arquivos
+
+Component.ioBrokerCore.service.security=Segurança do serviço
+Component.ioBrokerCore.service.starttest=Registrar o serviço ioBroker
+Component.ioBrokerCore.service.start=Iniciando o serviço ioBroker
+Component.ioBrokerCore.service.securityerror=Erro crítico de instalação. As configurações de segurança não puderam ser aplicadas ao serviço.
+
+Component.ioBrokerCore.port.starttest=Porta de administração
+Component.ioBrokerCore.port.progressText=Aguardando o webadmin
+Component.ioBrokerCore.port.error=Erro crítico de instalação. Nenhuma instância de administração web do ioBroker ativa na porta ${port_admin}. Abortar a instalação. Veja o arquivo de log.
+
+Component.ioBrokerCore.file.del=Deletando arquivos temporários
+
+postInstallationActionList.Migrate.progressText=Migração de dados ...
+postInstallationAction.Language.Log=Código de idioma do instalador: ${installation_language_code}\nioBroker - idioma definido para: ${langCode}\nioBroker - moeda definida para: ${langCurrency}
+
+Variable.default.instance=LarInteligente
+
+Init.OSversion.throwError=Esta versão do sistema operacional não é suportada. A versão deve ser pelo menos Windows 7, Server 2008 R2 ou mais recente.
+Init.Antivirus.throwError=Antivírus detectado. Existem problemas conhecidos com programas de antivírus. Por favor, desative-o temporariamente e inicie a instalação novamente. Abortando a instalação...
+Init.msicheck.error=Você precisa do Windows Installer MSI versão 3.1 para executar este programa.
+
+finalPageAction.web.progressText=Inicie a interface da web do ioBroker (http://localhost:${port_admin})
+finalPageAction.log.progressText=Mostrar os dados de log da instalação
+finalPageAction.Update.progressText=Alterar o comportamento do Windows Update para notificar o usuário antes de instalar as atualizações
+
+installationAbortedAction.text=A instalação foi cancelada. Informações de configuração podem ser encontradas no arquivo "${installer_installation_log}".\n\nVocê gostaria de abrir este arquivo agora?
+installationAbortedAction.logtext=A instalação foi cancelada.
+
+Parameter.expert.title=Assistente de configuração
+Parameter.expert.explanation=Como você gostaria de instalar o ioBroker?\n\nSe você quiser apenas instalar o ioBroker com as configurações padrão, a "Instalação padrão" é a escolha certa.\n\n"Instalação especializada" fornece opções adicionais de configuração. A manutenção de instalações existentes do ioBroker (por exemplo, configuração, desinstalação) só é possível no modo especialista.
+Parameter.expert.easy=Instalação padrão
+Parameter.expert.expert=Instalação especializada
+
+Parameter.infoinstances.title=Informações sobre instâncias do ioBroker
+Parameter.infoinstances.explanation=O ioBroker pode ser instalado e executado paralelamente mais de uma vez no seu computador.\n\nCada instalação é uma instância independente do ioBroker e é executada isoladamente, usando sua própria runtime e configuração. Por motivos de segurança, cada instância usa uma conta de serviço separada e tem suas próprias regras de firewall.\n\nCada conta de serviço tem apenas direitos para iniciar como um serviço, ler e gravar no diretório em que a instância está instalada e fazer o logon com direitos restritos como um usuário autenticado.\n\nCasos de uso para várias instâncias são por exemplo o desenvolvimento ou testes de software para o ioBroker.
+
+Parameter.instmode.title=Modo de instalação
+Parameter.instmode.description=Modo de instalação
+Parameter.instmode.explanation=Uma ou mais instâncias do ioBroker já instaladas foram encontradas. Gostaria de adicionar uma nova instância ou personalizar uma existente?
+Parameter.instmode.add.text=Instale uma nova instância
+Parameter.instmode.modify.text=Personalize uma instância existente. (Desculpe, esse recurso não está implementado ainda.)
+Parameter.instmode.modify.throwError=As funções para manter instâncias existentes ainda não foram implementadas na configuração. Posteriormente, você poderá configurar a operação do multihost, atualizar o js-controller ou node.js, ativar o redis ou desinstalar instâncias individuais aqui.
+
+Parameter.installdir.title=Diretório inicial da instância
+Parameter.installdir.description=Pasta raiz
+Parameter.installdir.explanation=Esta é a primeira instalação do ioBroker neste computador.\n\nPor favor, especifique o diretório raiz no qual você deseja instalar todas as instâncias do ioBroker.
+Parameter.installdir.driveletter.throwError=Por favor, use apenas unidades locais.
+Parameter.installdir.fixeddisks.throwError=Somente discos locais fixos podem ser usados.
+Parameter.installdir.userprofile.throwError=A instalação nas pastas do perfil do usuário não é possível.
+
+Parameter.newinstance.title=Adicione uma instância
+Parameter.newinstance.description=Nome da instância
+Parameter.newinstance.explanation=Por favor, escolha o nome da nova instância do ioBroker aqui. Não pode ser alterado mais tarde.\n\nOs caracteres possíveis são a-z, A-Z e 0-9.
+Parameter.newinstance.chars.throwError=O nome da instância pode conter apenas os caracteres a-z, A-Z e 0-9.
+Parameter.newinstance.exists.throwError=Já existe uma instância chamada "${insta}". Por favor, escolha um novo nome de instância.
+
+Parameter.ports.title=Configurações de comunicação
+Parameter.ports.database.explanation=\nO ioBroker usa bancos de dados específicos de instância para armazenar informações.\n\nAdaptadores acessam esses dados através de portas de rede selecionáveis gratuitamente. Por favor, defina portas exclusivas para esta instância do ioBroker agora.
+Parameter.ports.database.states=Porto para banco de dados de estados
+Parameter.ports.database.states.NaN=A porta de rede do banco de dados de estados deve ser um número.
+Parameter.ports.database.objects=Porta para banco de dados de objetos
+Parameter.ports.database.objects.NaN=A porta de rede para o banco de dados de objetos deve ser um número.
+Parameter.ports.admin.description=Porta para interface da web administrativa
+Parameter.ports.admin.explanation=\nO acesso à interface da web administrativa também requer uma porta exclusiva.
+Parameter.ports.admin.NaN=A porta de rede para acessar a interface da web administrativa deve ser um número.
+Parameter.ports.inuse=A porta ${port_check} já está sendo usada por outro programa.
+Parameter.ports.equal=Por favor, não use as mesmas portas.
+
+Parameter.migrate.title=Migração
+Parameter.migrate.explanation=Uma instalação anterior do ioBroker foi encontrada. Adaptadores, dados, scripts, configurações e visualizações da instalação antiga podem ser migrados automaticamente para a nova instância. O antigo serviço ioBroker será interrompido e, em seguida, os dados serão copiados. A instalação antiga não será deletada.\n\nVocê deseja executar a migração de dados agora? (Esse diálogo está atualmente sem função.)
+
+Parameter.summary.title=Resumo das próximas mudanças
+Parameter.summary.instance=- Uma nova instância do ioBroker "${instance}" será configurada.
+Parameter.summary.osver64=${text}\n\n- Se possível, todos os componentes serão instalados na versão de 64 bits.
+Parameter.summary.osver32=${text}\n\n- Todos os componentes estão instalados na versão de 32 bits.
+Parameter.summary.folder=${text}\n\n- Pasta de instalação para arquivos específicos da instância:\n      ${installdir}\n\n- Componentes de software globais para todas as instâncias:
+Parameter.summary.global.ready=${text}\n      ✓      ${project.component(globaltools).component(${component}).description}
+Parameter.summary.global.todo=${text}\n      ✕      ${project.component(globaltools).component(${component}).description}
+Parameter.summary.local=${text}\n\n- Componentes de software específicos da instância:
+Parameter.summary.local.ready=${text}\n      ✓      ${project.component(ioBrokerCG).component(${component}).description}
+Parameter.summary.local.todo=${text}\n      ✕      ${project.component(ioBrokerCG).component(${component}).description}
+Parameter.summary.firewall=${text}\n\n   ✕ = será instalado agora        ✓ = já está instalado\n\n- Adicione uma regra para esta instância ao firewall do Windows para permitir o recebimento de dados da rede.

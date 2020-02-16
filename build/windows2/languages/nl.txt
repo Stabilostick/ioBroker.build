@@ -1,0 +1,140 @@
+Installer.Welcome.Text=Welcome bij de ioBroker installatie wizard.\n\nioBroker is een centraal systeem voor smart homes, creëer huis automatisering en Smart Living.\n\nMet ioBroker geniet je van:\n\n   - een krachtige maar eenvoudig te bedienen IOT oplossing\n   - een gebruiksvriendelijke interface\n   - eenvoudige integratie met bestaande systemen en diensten\n   - modulair vormgeving\n   - web-based visualisatie\n   - mobiele toegang\n   - connectiviteit met Alexa, Homekit en vele andere smart home systemen\n   - ondersteuning van een grote en actieve community\n\n\nSetup Version: ${project.version}
+
+Component.Group.global.description=Globale tools
+Component.download.title=Download gegevens ...
+Component.installation.title=Installatie... even geduld a.u.b. ...
+Component.decompression.title=Uitpakken ...
+
+Component.dotNet.explanation=Microsoft .NET 4.8
+Component.dotNet.description=Microsoft .NET 4.8 (download, verwacht. 112MB)
+Component.dotNet.detailedDescription=Microsoft Visual Studio 2017 Installer benodigd Microsoft .NET Framework versie 4.5.1 of hoger !.
+Component.dotNet.download.error=Fout bij download Microsoft .NET 4.8
+Component.dotNet.install.error=Fout bij installatie Microsoft .NET 4.8
+
+Component.Git.explanation=Git ${gittargetversion}
+Component.Git.description=Git ${gittargetversion} (download, verwacht. 46MB)
+Component.Git.detailedDescription=Git word gebruikt door npm om aanvullende pakketten te downloaden
+Component.Git.download.error32=Fout bij download 'https://github.com/git-for-windows/git/releases/download/v2.24.0.windows.2/Git-2.24.0.2-32-bit.exe'
+Component.Git.download.error64=Fout bij download 'https://github.com/git-for-windows/git/releases/download/v2.24.0.windows.2/Git-2.24.0.2-64-bit.exe'
+Component.Git.install.error=Fout bij installatie Git ${gittargetversion}
+
+Component.Bonjour.description=Apple Bonjour and Bonjour SDK
+Component.Bonjour.progressText=Installeer Apple Bonjour en Bonjour SDK
+Component.Bonjour.install.error=Fout bij installatie Apple Bonjour.
+
+Component.OpenSSL.description=OpenSSL 1.0.2q
+Component.OpenSSL.progressText=OpenSSL 1.0.2q
+
+Component.VisualStudio.explanation=Microsoft VisualStudio BuildTools 2017
+Component.VisualStudio.description=Microsoft VisualStudio BuildTools 2017 (download, verwacht. 1.4GB)
+Component.VisualStudio.detailedDescription=Microsoft Visual Studio 2017 installatie is noodzakelijk om Visual Studio 2017 Build Tools te downloaden en installeren.
+Component.VisualStudio.download.error=Fout bij download Microsoft Visual Studio 2017 installer
+Component.VisualStudio.progressText=Microsoft VisualStudio BuildTools 2017 - downloaden en installeren,  verwacht 1.4GB aan gegevens
+Component.VisualStudio.install.error=Fout bij installatie Microsoft Visual Studio BuildTools 2017
+
+Component.ioBrokerCG.description=ioBroker(${instance})
+Component.ioBrokerCG.detailedDescription=ioBroker Automation Server
+
+Component.Python.description=Python 2.7.17
+Component.Python.detailedDescription=Python 2.7.17 voor node-gyp bouwproces
+Component.Python.progressText=Python 2.7.17
+
+Component.VCredist.progressText=Installeer Microsoft Visual C ++ 2008 Redistributable
+Component.VCredist.install.error=Fout bij installatie Microsoft Visual C ++ 2008 Redistributable
+
+Component.NodeJS.description=Node.js 10.17.0
+Component.NodeJS.detailedDescription=Node.js 10.17.0 JavaScript Runtime omgeving
+Component.NodeJS.progressText=Node.js 10.17.0
+Component.NodeJS.progressText.config=Configuring Node.js 10.17.0
+Component.NodeJS.progressText.npmregistry=Wijzig npm register naar oosterse locatie
+
+Component.ioBrokerCore.description=ioBroker 2.1.0
+Component.ioBrokerCore.detailedDescription=ioBroker programma and databases
+Component.ioBrokerCore.progressText=ioBroker Core Server
+Component.ioBrokerCore.startMenuShortcut.cmdcomment=Open ioBroker(${instance}) command line
+Component.ioBrokerCore.startMenuShortcut.cmdname=ioBroker(${instance}) command line
+Component.ioBrokerCore.startMenuShortcut.comment=ioBroker(${instance}) in de Webbrowser
+Component.ioBrokerCore.startMenuShortcut.name=ioBroker(${instance})
+Component.ioBrokerCore.init.title=ioBroker initialisatie ...
+Component.ioBrokerCore.init.progressText=Database installatie en initiële konfiguratie
+Component.ioBrokerCore.init.error=ioBroker installatie mislukt!
+Component.ioBrokerCore.file.security=Bestandssysteem beveiliging
+Component.ioBrokerCore.service.security=Service beveiliging
+Component.ioBrokerCore.service.starttest=Registreer ioBroker dienst
+Component.ioBrokerCore.service.start=Start ioBroker dienst
+Component.ioBrokerCore.service.securityerror=Fatale installatiefout. Beveiliigingsinstellingen konden niet toegepast worden op de dienst.
+Component.ioBrokerCore.port.starttest=Admin port
+Component.ioBrokerCore.port.progressText=Wachten op webadmin
+Component.ioBrokerCore.port.error=Fatale installatiefout. Geen aktieve ioBroker administratie- instantie op port ${port_admin}. Annuleer installatie, controleer het log bestand.
+Component.ioBrokerCore.file.del=Verwijder tijdelijke bestanden
+
+postInstallationActionList.Migrate.progressText=Data migratie ...
+postInstallationAction.Language.Log=Installer language code: ${installation_language_code}\nioBroker language set to: ${langCode}\nioBroker currency set to: ${langCurrency}
+
+Variable.default.instance=SmartHome
+
+Init.OSversion.throwError=Deze versie van het besturingssysteem wordt niet ondersteund. Versie moet ten minste Windows 7, Server 2008 R2 of nieuwer zijn.
+Init.Antivirus.throwError=Antivirus van derden gedetecteerd. Er zijn bekende problemen met externe antivirusprogramma's. Schakel dit tijdelijk uit. Het aborteren.
+Init.msicheck.error=Windows Installer MSI version 3.1 of hoger benodigd om dit programma uit te kunnen voeren.
+
+finalPageAction.web.progressText=Start ioBroker web interface (http://localhost:${port_admin})
+finalPageAction.log.progressText=Laat log bestanden van installatie zien.
+finalPageAction.Update.progressText=Wijzig het gedrag van Windows Update om gebruikers op de hoogte te stellen voordat ze updates installeren
+
+installationAbortedAction.text=De installatie is afgebroken. Het logbestand is te vinden in "${installer_installation_log}" file.\n\nWilt u deze nu openen?
+installationAbortedAction.logtext=Installatie is afgebroken.
+
+Parameter.expert.title=Setup wizard
+Parameter.expert.explanation=Hoe wilt u ioBroker installeren ?\n\nAls u ioBroker met de standard konfiguratie wil installeren, is "Eenvoudige modus" de juiste keuze.\n\n"Experten modus" biedt de mogelijkheid tot aanvullende instellingen. Beheer/modificatie van een bestaande installatie (bijvoorbeeld konfiguratie of deïnstallatie) is alleen mogelijk in de Experten modus.
+Parameter.expert.easy=Eenvoudige modus
+Parameter.expert.expert=Experten modus
+
+Parameter.infoinstances.title=Informatie omtrent de ioBroker instantie
+Parameter.infoinstances.explanation=ioBroker kan meerdere keren installeerd en uitgevoerd worden.\n\nElke installatie is een geisoleerde ioBroker server omgeving welke zijn eigen omgeving en konfiguratie kent. Voor de veiligheid gebruikt elke installatie zijn eigen service account en Firewall instellingen.\n\nElke service account heeft alleen rechten om te lezen en schrijven binnen het Bestandssysteem waar de instance geinstalleerd is en logt gegevens als een beperkte geautoriseerde gebruiker.\n\nHet is gebruikelijk verschillende instantie te installeren op ontwikkel omgevingen, de gelijktijdige inzet van test- en productieomgevingen, of de logische scheiding van individuele ioBroker-servers van elkaar.
+
+Parameter.instmode.title=Installatie modus
+Parameter.instmode.description=Installatie modus
+Parameter.instmode.explanation=Er zijn een of meer reeds geïnstalleerde ioBroker-instanties gevonden. Wilt u een nieuw exemplaar toevoegen of een bestaand exemplaar aanpassen?
+Parameter.instmode.add.text=Installeer een nieuwe instantie
+Parameter.instmode.modify.text=Pas een bestaande installatie aan. (Sorry, deze functie is nog niet geïmplementeerd.)
+Parameter.instmode.modify.throwError=De functie om een bestaande instanties te behouden is nog niet geïmplementeerd in de configuratie. Later kunt u een multihost-omgeving instellen, de js-controller of node.js bijwerken, opnieuw activeren of afzonderlijke exemplaren hier verwijderen.
+
+Parameter.installdir.title=Initialiseer basis Bestandssysteem
+Parameter.installdir.description=Hoofdmap
+Parameter.installdir.explanation=Dit is de eerste installatie van ioBroker op deze machine.\n\nGeef de hoofdmap aan waarin u alle ioBroker-instanties wilt installeren.
+Parameter.installdir.driveletter.throwError=Gebruik alleen lokale stations.
+Parameter.installdir.fixeddisks.throwError=Alleen vaste lokale schijven kunnen worden gebruikt.
+Parameter.installdir.userprofile.throwError=Installatie in mappen met gebruikersprofielen is niet mogelijk.
+
+Parameter.newinstance.title=Voeg een service toe
+Parameter.newinstance.description=Instance naam
+Parameter.newinstance.explanation=Voer hier de naam van de nieuwe instantie ioBroker in. Deze kan later niet worden gewijzigd.\n\nThe name may consist of the characters a-z, A-Z and 0-9.
+Parameter.newinstance.chars.throwError=De naam mag alleen de tekens a-z, A-Z en 0-9 bevatten.
+Parameter.newinstance.exists.throwError=Er is al een exemplaar met de naam "${insta}". Kies een nieuwe naam.
+
+Parameter.ports.title=Communicatie-instellingen
+Parameter.ports.database.explanation=\nioBroker maakt gebruik van subsysteem-specifieke databases om informatie op te slaan.\n\nAdapters hebben toegang tot deze gegevens via vrij te kiezen netwerkpoorten. Stel nu alsjeblieft unieke poorten in voor deze instantie van ioBroker.
+Parameter.ports.database.states=Port voor states database
+Parameter.ports.database.states.NaN=De netwerkpoort voor de states database moet een nummer zijn.
+Parameter.ports.database.objects=Port voor objekten database
+Parameter.ports.database.objects.NaN=De netwerkpoort voor de objekten database moet een nummer zijn.
+Parameter.ports.admin.description=Port voor admin web toegang
+Parameter.ports.admin.explanation=\nToegang tot de beheer webinterface vereist een unieke poort.
+Parameter.ports.admin.NaN=De netwerkpoort voor de beheer webinterface database moet een nummer zijn.
+Parameter.ports.inuse=Port ${port_check} is al in gebruik door een ander programma.
+Parameter.ports.equal=Gebruik alstublieft niet dezelfde poorten.
+
+Parameter.migrate.title=Migratie
+Parameter.migrate.explanation=Er is een bestaande ioBroker-installatie gevonden. Adapters, gegevens, scripts, instellingen en visualisaties van de oude installatie kunnen nu automatisch worden gemigreerd naar dit exemplaar. De oude ioBroker-service wordt gestopt en de gegevens worden gekopieerd. De oude installatie wordt niet verwijderd..\n\nWilt u nu de datamigratie uitvoeren? (Dialoog heeft momenteel geen functie.)
+
+Parameter.summary.title=Samenvatting van aankomende wijzigingen
+Parameter.summary.instance=- Een nieuw exemplaar van ioBroker "${instance}" wordt geïnstalleerd.
+Parameter.summary.osver64=${text}\n\n- Indien mogelijk worden alle componenten in de 64-bit-versie geïnstalleerd.
+Parameter.summary.osver32=${text}\n\n- Alle componenten zijn geïnstalleerd als 32-bits versie.
+Parameter.summary.folder=${text}\n\n- Installatiemap voor instantie specifieke bestanden:\n      ${installdir}\n\n- Globale softwarecomponenten voor alle instanties:
+Parameter.summary.global.ready=${text}\n      ✓      ${project.component(globaltools).component(${component}).description}
+Parameter.summary.global.todo=${text}\n      ✕      ${project.component(globaltools).component(${component}).description}
+Parameter.summary.local=${text}\n\n- Exemplaar specifieke softwarecomponenten:
+Parameter.summary.local.ready=${text}\n      ✓      ${project.component(ioBrokerCG).component(${component}).description}
+Parameter.summary.local.todo=${text}\n      ✕      ${project.component(ioBrokerCG).component(${component}).description}
+Parameter.summary.firewall=${text}\n\n   ✕ = word nu geinstalleerd       ✓ = is reeds geinstalleerd\n\n- Voeg een regel voor dit exemplaar toe aan de Windows-firewall om netwerkgegevens te kunnen ontvangen.

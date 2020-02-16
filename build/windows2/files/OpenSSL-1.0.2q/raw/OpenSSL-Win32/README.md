@@ -1,0 +1,1 @@
+Place 32Bit OpenSSL-1.0.2q folder content here.

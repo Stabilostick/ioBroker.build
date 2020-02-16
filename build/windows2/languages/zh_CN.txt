@@ -1,0 +1,140 @@
+Installer.Welcome.Text=欢迎使用ioBroker设置向导。\n\nioBroker是智能家居，楼宇自动化和辅助生活的中枢平台。\n\n使用ioBroker，您可以获得：\n\n   - 功能强大但易于管理的物联网解决方案\n   - 用户友好的界面\n   - 十分便捷即可接入现有智能家居设备、物联网服务的工具\n   - 模块化设计的系统\n   - 基于Web的可视化系统\n   - 手机端可以访问的系统\n   - 轻松地与Alexa，Homekit和许多其他智能家居系统连接\n   - 庞大而活跃的社区支持\n\n\nSetup Version: ${project.version}
+
+Component.Group.global.description=全局工具
+Component.download.title=数据下载中 ...
+Component.installation.title=程序正在安装，请耐心等待 ...
+Component.decompression.title=解压中 ...
+
+Component.dotNet.explanation=Microsoft .NET 4.8
+Component.dotNet.description=Microsoft .NET 4.8 (下载文件约112MB)
+Component.dotNet.detailedDescription=Microsoft Visual Studio 2017 安装程序依赖于4.5.1或更高版本的 Microsoft .NET 框架。
+Component.dotNet.download.error=Microsoft .NET 4.8 下载出错！
+Component.dotNet.install.error=Microsoft .NET 4.8 安装出错！
+
+Component.Git.explanation=Git ${gittargetversion}
+Component.Git.description=Git ${gittargetversion} (下载文件约46MB)
+Component.Git.detailedDescription=npm需要使用Git下载额外的资源和插件。
+Component.Git.download.error32=“https://github.com/git-for-windows/git/releases/download/v2.24.0.windows.2/Git-2.24.0.2-32-bit.exe”下载出错！
+Component.Git.download.error64=“https://github.com/git-for-windows/git/releases/download/v2.24.0.windows.2/Git-2.24.0.2-64-bit.exe”下载出错！
+Component.Git.install.error=Git ${gittargetversion} 安装出错！
+
+Component.Bonjour.description=Apple Bonjour and Bonjour SDK
+Component.Bonjour.progressText=正在安装 Apple Bonjour and Bonjour SDK
+Component.Bonjour.install.error=Apple Bonjour 安装出错！
+
+Component.OpenSSL.description=OpenSSL 1.0.2q
+Component.OpenSSL.progressText=OpenSSL 1.0.2q
+
+Component.VisualStudio.explanation=Microsoft VisualStudio BuildTools 2017
+Component.VisualStudio.description=Microsoft VisualStudio BuildTools 2017 (下载文件约1.4GB)
+Component.VisualStudio.detailedDescription=下载和安装 Visual Studio 2017 Build Tools 依赖于 Microsoft Visual Studio 2017 安装包。
+Component.VisualStudio.download.error=Microsoft Visual Studio 2017 安装包下载出错！
+Component.VisualStudio.progressText=Microsoft VisualStudio BuildTools 2017 - 下载和安装中... 文件大小约1.4GB。
+Component.VisualStudio.install.error=Microsoft Visual Studio BuildTools 2017 安装出错！
+
+Component.ioBrokerCG.description=ioBroker(${instance})
+Component.ioBrokerCG.detailedDescription=ioBroker 自动化服务器
+
+Component.Python.description=Python 2.7.17
+Component.Python.detailedDescription=node-gyp 编译系统依赖于 Python 2.7.17。
+Component.Python.progressText=Python 2.7.17
+
+Component.VCredist.progressText=正在安装 Microsoft Visual C ++ 2008 Redistributable
+Component.VCredist.install.error=Microsoft Visual C ++ 2008 Redistributable 安装出错！
+
+Component.NodeJS.description=Node.js 10.17.0
+Component.NodeJS.detailedDescription=Node.js 10.17.0 JavaScript 运行时环境
+Component.NodeJS.progressText=Node.js 10.17.0
+Component.NodeJS.progressText.config=正在配置 Node.js 10.17.0
+Component.NodeJS.progressText.npmregistry=替换npm源
+
+Component.ioBrokerCore.description=ioBroker 2.1.0
+Component.ioBrokerCore.detailedDescription=ioBroker 程序和数据库
+Component.ioBrokerCore.progressText=ioBroker 核心服务
+Component.ioBrokerCore.startMenuShortcut.cmdcomment=打开 ioBroker(${instance}) 命令行程序
+Component.ioBrokerCore.startMenuShortcut.cmdname=ioBroker(${instance}) 命令行
+Component.ioBrokerCore.startMenuShortcut.comment=浏览器访问 ioBroker(${instance}) 
+Component.ioBrokerCore.startMenuShortcut.name=ioBroker(${instance})
+Component.ioBrokerCore.init.title=ioBroker 初始化中 ...
+Component.ioBrokerCore.init.progressText=数据库和配置初始化
+Component.ioBrokerCore.init.error=ioBroker 初始化失败！
+Component.ioBrokerCore.file.security=文件系统安全
+Component.ioBrokerCore.service.security=服务安全
+Component.ioBrokerCore.service.starttest=注册ioBroker服务
+Component.ioBrokerCore.service.start=正在启动ioBroker服务
+Component.ioBrokerCore.service.securityerror=严重的安装错误！服务安全设置失败！
+Component.ioBrokerCore.port.starttest=管理员页面端口
+Component.ioBrokerCore.port.progressText=等待管理员页面
+Component.ioBrokerCore.port.error=严重的安装错误！未在ioBroker管理员端口${port_admin}发现运行的实例！安装终止。详细内容请检查日志文件。
+Component.ioBrokerCore.file.del=删除临时文件
+
+postInstallationActionList.Migrate.progressText=数据合并中 ...
+postInstallationAction.Language.Log=Installer language code: ${installation_language_code}\nioBroker language set to: ${langCode}\nioBroker currency set to: ${langCurrency}
+
+Variable.default.instance=SmartHome
+
+Init.OSversion.throwError=不支持此操作系统版本。 版本必须至少为Windows 7，Server 2008 R2或更高版本。
+Init.Antivirus.throwError=检测到第三方防病毒软件。 第三方防病毒程序存在已知问题。 请暂时禁用它。中止。
+Init.msicheck.error=运行此程序依赖于3.1版本的Windows Installer MSI。
+
+finalPageAction.web.progressText=打开ioBroker管理员页面 (http://localhost:${port_admin})
+finalPageAction.log.progressText=显示安装日志文件
+finalPageAction.Update.progressText=更改Windows Update行为以在安装更新之前通知用户
+
+installationAbortedAction.text=安装被终止。安装信息保存在“${installer_installation_log}”文件中。\n\n是否打开此文件？
+installationAbortedAction.logtext=安装终止。
+
+Parameter.expert.title=设置向导
+Parameter.expert.explanation=您希望如何安装ioBroker？\n\n如果您希望使用默认配置安装，请选择“简易配置”。\n\n如果您希望配置更多的参数，请选择“专家配置”。只有专家模式可以维护（比如配置，卸载）已经存在的ioBroker程序。
+Parameter.expert.easy=简易配置
+Parameter.expert.expert=专家配置
+
+Parameter.infoinstances.title=ioBroker实例信息
+Parameter.infoinstances.explanation=ioBroker可以同时在您电脑安装和执行多次。\n\n每次安装ioBroker都是一个独立的服务器实例，每个实例都使用自己的运行时环境和独立的配置。出于安全原因，每个实例使用一个单独的服务帐户，并有自己的防火墙规则。\n\n每个服务帐户只拥有对应实例的启动、目录读写、文件访问以及授权用户登录的权限。\n\n多ioBroker实例常用于一下几种情况：不同的软件环境、在运行ioBroker的机器上同时进行ioBroker开发工作、需要逻辑上独立的多个ioBroker实例。
+
+Parameter.instmode.title=安装模式
+Parameter.instmode.description=安装模式
+Parameter.instmode.explanation=发现一个或多个已经安装的ioBroker实例。您希望安装一个全新的实例？还是配置已经存在的实例？
+Parameter.instmode.add.text=安装一个新的实例
+Parameter.instmode.modify.text=配置已经存在的实例（很抱歉，此功能尚未实现）
+Parameter.instmode.modify.throwError=配置现有实例的功能尚未实现。稍后，您将能够设置多主机模式，更新js-controller或Node.js，激活redis数据库或卸载单独的实例。
+
+Parameter.installdir.title=实例目录
+Parameter.installdir.description=根文件夹
+Parameter.installdir.explanation=这是在您机器上第一次安装ioBroker。\n\n请指定一个文件夹用于安装所有的ioBroker实例。
+Parameter.installdir.driveletter.throwError=请使用本机磁盘。
+Parameter.installdir.fixeddisks.throwError=仅可以使用本机磁盘安装。
+Parameter.installdir.userprofile.throwError=无法安装到用户文件夹中。
+
+Parameter.newinstance.title=增加实例
+Parameter.newinstance.description=实例名称
+Parameter.newinstance.explanation=请输入新增ioBroker实例的名称。此名称不可改变\n\n名称由英文大小写字符和数字构成。
+Parameter.newinstance.chars.throwError=实例名称仅可以包含英文大小写字符和数字。
+Parameter.newinstance.exists.throwError=实例名称“${insta}”已经存在。请使用一个新的实例名称。
+
+Parameter.ports.title=通信设置
+Parameter.ports.database.explanation=\nioBroker使用实例指定的数据库存储数据。\n\n所有的适配器通过一个可使用的网络端口获取数据库数据。请为当前ioBroker实例设置一个唯一的端口。
+Parameter.ports.database.states=状态数据库端口
+Parameter.ports.database.states.NaN=状态数据库端口必须是一个数字。
+Parameter.ports.database.objects=对象数据库端口
+Parameter.ports.database.objects.NaN=对象数据库端口必须是一个数字。
+Parameter.ports.admin.description=管理员页面端口
+Parameter.ports.admin.explanation=\n管理员页面端口必须为一个独占的端口。
+Parameter.ports.admin.NaN=管理员页面端口必须是一个数字。
+Parameter.ports.inuse=${port_check}端口已经被其他程序使用。
+Parameter.ports.equal=请不要使用相同的端口
+
+Parameter.migrate.title=数据迁移
+Parameter.migrate.explanation=发现一个已安装的旧版本ioBroker。旧版本ioBroker的适配器、数据、脚本、设置和可视化现在可以自动迁移到此实例。旧版本ioBroker服务将被停止，但是不会被删除。您现在需要运行数据迁移吗？(目前没有功能)
+
+Parameter.summary.title=变更汇总
+Parameter.summary.instance=- 一个新的ioBroker实例"${instance}"将被配置.
+Parameter.summary.osver64=${text}\n\n- 如果可以的话，将安装64位版本的组件。
+Parameter.summary.osver32=${text}\n\n- 所有组件将安装32位版本。
+Parameter.summary.folder=${text}\n\n- 实例的安装文件夹：\n      ${installdir}\n\n- 所有实例均可使用的软件组件：
+Parameter.summary.global.ready=${text}\n      ✓      ${project.component(globaltools).component(${component}).description}
+Parameter.summary.global.todo=${text}\n      ✕      ${project.component(globaltools).component(${component}).description}
+Parameter.summary.local=${text}\n\n- 当前实例特有的软件组件：
+Parameter.summary.local.ready=${text}\n      ✓      ${project.component(ioBrokerCG).component(${component}).description}
+Parameter.summary.local.todo=${text}\n      ✕      ${project.component(ioBrokerCG).component(${component}).description}
+Parameter.summary.firewall=${text}\n\n   ✕ = 将在此次安装过程中安装        ✓ = 已经安装\n\n- 请在Windows防火墙为此实例添加规则，以允许此实例接收网络数据。

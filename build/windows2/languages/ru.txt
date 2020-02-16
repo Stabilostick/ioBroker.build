@@ -1,0 +1,140 @@
+Installer.Welcome.Text=Добро пожаловать в мастер установки ioBroker.\n\nioBroker - это центральный сервер для умных домов и автоматизации.\n\nС ioBroker вы получаете:\n\n - мощное, но простое в управлении решение IoT\n - удобный интерфейс\n - простая интеграция с существующими системами и службами\n - модульный дизайн\n - визуализация через Интернет\n - мобильный доступ\n - подключение к Alexa, Homekit и многим другим системам умного дома\n - помощь от большого и активного сообщества\n\n\nSetup Version: ${project.version}
+
+Component.Group.global.description=Глобальные инструменты
+Component.download.title=Загрузка данных ...
+Component.installation.title=Установка в процессе. Пожалуйста, подождите ...
+Component.decompression.title=Извлечение ...
+
+Component.dotNet.explanation=Microsoft .NET 4.8
+Component.dotNet.description=Microsoft .NET 4.8 (загрузка, около 80 МБ)
+Component.dotNet.detailedDescription=Для работы Microsoft Visual Studio 2017 установщика требуется Microsoft.NET Framework версии 4.5.1 или новее.
+Component.dotNet.download.error=Ошибка при загрузке Microsoft .NET 4.8
+Component.dotNet.install.error=Ошибка установки Microsoft .NET 4.8
+
+Component.Git.explanation=Git ${gittargetversion}
+Component.Git.description=Git ${gittargetversion} (загрузка, около 44МБ)
+Component.Git.detailedDescription=Git используется npm для загрузки дополнительных ресурсов
+Component.Git.download.error32=Ошибка при загрузке 'https://github.com/git-for-windows/git/releases/download/v2.24.0.windows.2/Git-2.24.0.2-32-bit.exe'
+Component.Git.download.error64=Ошибка при загрузке 'https://github.com/git-for-windows/git/releases/download/v2.24.0.windows.2/Git-2.24.0.2-64-bit.exe'
+Component.Git.install.error=Ошибка при установке Git ${gittargetversion}
+
+Component.Bonjour.description=Apple Bonjour и Bonjour SDK
+Component.Bonjour.progressText=Установка Apple Bonjour и Bonjour SDK
+Component.Bonjour.install.error=Ошибка при установке Apple Bonjour.
+
+Component.OpenSSL.description=OpenSSL 1.0.2q
+Component.OpenSSL.progressText=OpenSSL 1.0.2q
+
+Component.VisualStudio.explanation=Microsoft VisualStudio BuildTools 2017
+Component.VisualStudio.description=Microsoft VisualStudio BuildTools 2017 (загрузка, около 1.4ГБ)
+Component.VisualStudio.detailedDescription=Установщик Microsoft Visual Studio 2017 необходим для загрузки и установки средств сборки Visual Studio 2017.
+Component.VisualStudio.download.error=Ошибка загрузки установщика Microsoft Visual Studio 2017
+Component.VisualStudio.progressText=Microsoft VisualStudio BuildTools 2017 - загрузка и установка до 1.4ГБ данных сейчас
+Component.VisualStudio.install.error=Ошибка при установке Microsoft Visual Studio BuildTools 2017
+
+Component.ioBrokerCG.description=ioBroker(${instance})
+Component.ioBrokerCG.detailedDescription=ioBroker Automation Server
+
+Component.Python.description=Python 2.7.17
+Component.Python.detailedDescription=Python 2.7.17 для node-gyp build process
+Component.Python.progressText=Python 2.7.17
+
+Component.VCredist.progressText=Установка Microsoft Visual C ++ 2008 Redistributable
+Component.VCredist.install.error=Ошибка при установке Microsoft Visual C ++ 2008 Redistributable
+
+Component.NodeJS.description=Node.js 10.17.0
+Component.NodeJS.detailedDescription=Node.js 10.17.0 JavaScript Runtime Environment
+Component.NodeJS.progressText=Node.js 10.17.0
+Component.NodeJS.progressText.config=Configuring Node.js 10.17.0
+Component.NodeJS.progressText.npmregistry=Изменить реестр npm на восточное местоположение (для китая)
+
+Component.ioBrokerCore.description=ioBroker 2.1.0
+Component.ioBrokerCore.detailedDescription=Программа ioBroker и базы данных
+Component.ioBrokerCore.progressText=ioBroker Core Server
+Component.ioBrokerCore.startMenuShortcut.cmdcomment=Открыть командую строку ioBroker(${instance})
+Component.ioBrokerCore.startMenuShortcut.cmdname=ioBroker(${instance}) командая строку
+Component.ioBrokerCore.startMenuShortcut.comment=ioBroker(${instance}) в веб-браузере
+Component.ioBrokerCore.startMenuShortcut.name=ioBroker(${instance})
+Component.ioBrokerCore.init.title=инициализация ioBroker ...
+Component.ioBrokerCore.init.progressText=Установка базы данных и первоначальная настройка
+Component.ioBrokerCore.init.error=Не удалось инициализировать ioBroker.
+Component.ioBrokerCore.file.security=Безопасность файловой системы
+Component.ioBrokerCore.service.security=Служба безопасности
+Component.ioBrokerCore.service.starttest=Зарегистрировать сервис ioBroker
+Component.ioBrokerCore.service.start=Запуск сервиса ioBroker
+Component.ioBrokerCore.service.securityerror=Критическая ошибка установки. Настройки безопасности не могут быть применены к сервису.
+Component.ioBrokerCore.port.starttest=Admin port
+Component.ioBrokerCore.port.progressText=В ожидании вебадмина
+Component.ioBrokerCore.port.error=Критическая ошибка установки. Нет админки ioBroker на порту ${port_admin}. Отмена установки. Смотрите лог-файл.
+Component.ioBrokerCore.file.del=Удалить временные файлы
+
+postInstallationActionList.Migrate.progressText=Перенос данных ...
+postInstallationAction.Language.Log=Installer language code: ${installation_language_code}\nioBroker language set to: ${langCode}\nioBroker currency set to: ${langCurrency}
+
+Variable.default.instance=SmartHome
+
+Init.OSversion.throwError=Эта версия операционной системы не поддерживается. Версия должна быть не ниже Windows 7, Server 2008 R2 или новее.
+Init.Antivirus.throwError=Обнаружен сторонний антивирус. Есть известные проблемы со сторонними антивирусными программами. Пожалуйста, отключите его временно.
+Init.msicheck.error=Вам нужно Windows Installer MSI версии 3.1 для запуска этой программы.
+
+finalPageAction.web.progressText=Запустить веб-интерфейс ioBroker (http://localhost:${port_admin})
+finalPageAction.log.progressText=Показать лог-файл установки
+finalPageAction.Update.progressText=Изменить настройки Центра обновления Windows, чтобы уведомлять пользователей перед установкой обновлений
+
+installationAbortedAction.text=Установка была прервана. Информацию о настройке можно найти в файле "${installer_installation_log}".\n\nХотите открыть этот файл сейчас?
+installationAbortedAction.logtext=Установка была прервана.
+
+Parameter.expert.title=Мастер установки
+Parameter.expert.explanation=Как бы вы хотели установить ioBroker?\n\nЕсли вы просто хотите установить ioBroker с настройками по умолчанию, «Простая настройка» является правильным выбором.\n\n«Экспертная настройка» предоставляет дополнительные параметры конфигурации. Обслуживание существующих установок ioBroker (например, настройка, удаление) возможно только в экспертном режиме.
+Parameter.expert.easy=Простая настройка
+Parameter.expert.expert=Экспертная настройка
+
+Parameter.infoinstances.title=Информация об ioBroker
+Parameter.infoinstances.explanation=ioBroker может быть установлен и запущен несколько раз на вашем компьютере параллельно.\n\nКаждая установка является независимым экземпляром сервера ioBroker и выполняется изолированно с использованием собственной среды выполнения и конфигурации. В целях безопасности каждый экземпляр использует отдельную учетную запись службы и имеет свои собственные правила брандмауэра.\n\nКаждая учетная запись службы имеет только права на запуск в качестве службы, чтение и запись файлов в каталог, в котором установлен экземпляр, и вход в систему с помощью ограниченные права как аутентифицированного пользователя.\n\nИспользуются случаи для нескольких экземпляров: установка различных сред разработки программного обеспечения, одновременное развертывание тестовой и производственной сред или логическое отделение отдельных серверов ioBroker друг от друга.
+
+Parameter.instmode.title=Режим установки
+Parameter.instmode.description=Режим установки
+Parameter.instmode.explanation=Обнаружен один или несколько уже установленных экземпляров ioBroker. Вы хотите добавить новый экземпляр или настроить существующий?
+Parameter.instmode.add.text=Установить новый экземпляр
+Parameter.instmode.modify.text=Настройте существующий экземпляр. (Извините, эта функция еще не реализована.)
+Parameter.instmode.modify.throwError=Функции для поддержки существующих экземпляров еще не были реализованы в настройке. Позже вы сможете настроить работу с несколькими хостами, обновить js-controller или node.js, активировать redis или удалить отдельные экземпляры здесь.
+
+Parameter.installdir.title=Домашний каталог
+Parameter.installdir.description=Корневая папка
+Parameter.installdir.explanation=Это первая установка ioBroker на этот компьютер.\n\nУкажите корневой каталог, в который вы хотите установить все экземпляры ioBroker.
+Parameter.installdir.driveletter.throwError=Пожалуйста, используйте только локальные диски.
+Parameter.installdir.fixeddisks.throwError=Можно использовать только фиксированные локальные диски.
+Parameter.installdir.userprofile.throwError=Установка в папки профиля пользователя невозможна.
+
+Parameter.newinstance.title=Добавить экземпляр
+Parameter.newinstance.description=Имя экземпляра
+Parameter.newinstance.explanation=Пожалуйста, введите имя нового экземпляра ioBroker здесь. Его нельзя изменить позже.\n\nИмя может состоять из символов a-z, A-Z и 0-9.
+Parameter.newinstance.chars.throwError=Имя экземпляра может содержать только символы a-z, A-Z и 0-9.
+Parameter.newinstance.exists.throwError=Уже есть экземпляр с именем "${insta}". Пожалуйста, выберите новое имя экземпляра.
+
+Parameter.ports.title=Настройки соедиений
+Parameter.ports.database.explanation=\nioBroker использует специфичные для экземпляра базы данных для хранения информации. \n\n Адаптеры получают доступ к этим данным через свободные выбираемые сетевые порты. Пожалуйста, выберите уникальные порты для этого экземпляра ioBroker сейчас.
+Parameter.ports.database.states=Порт для состояний
+Parameter.ports.database.states.NaN=Сетевой порт для базы данных состояний должен быть числом.
+Parameter.ports.database.objects=Порт для объектов
+Parameter.ports.database.objects.NaN=Сетевой порт для базы данных объектов должен быть числом.
+Parameter.ports.admin.description=Порт для админки
+Parameter.ports.admin.explanation=\nДоступ к админке также требует уникального порта.
+Parameter.ports.admin.NaN=Сетевой порт для доступа к веб-интерфейсу администратора должен быть номером.
+Parameter.ports.inuse=Порт ${port_check} уже используется другой программой.
+Parameter.ports.equal=Пожалуйста, используйте разные порты.
+
+Parameter.migrate.title=Миграция
+Parameter.migrate.explanation=Более ранняя установка ioBroker была найдена. Адаптеры, данные, сценарии, настройки и визуализации старой установки теперь могут автоматически переноситься в этот экземпляр. Старая служба ioBroker будет остановлена, а затем данные будут скопированы. Старая установка не будет удалена.\n\nВы хотите запустить перенос данных сейчас? (Диалог в настоящее время без функции.)
+
+Parameter.summary.title=Сводка предстоящих изменений
+Parameter.summary.instance=- Будет создан новый экземпляр ioBroker "${instance}".
+Parameter.summary.osver64=${text}\n\n- По возможности все компоненты будут установлены в 64-битной версии.
+Parameter.summary.osver32=${text}\n\n- Все компоненты установлены в 32-битной версии.
+Parameter.summary.folder=${text}\n\n- Папка установки для конкретных файлов:\n      ${installdir}\n\n- Глобальные программные компоненты для всех случаев:
+Parameter.summary.global.ready=${text}\n      ✓      ${project.component(globaltools).component(${component}).description}
+Parameter.summary.global.todo=${text}\n      ✕      ${project.component(globaltools).component(${component}).description}
+Parameter.summary.local=${text}\n\n- Компоненты онкретного экземпляра:
+Parameter.summary.local.ready=${text}\n      ✓      ${project.component(ioBrokerCG).component(${component}).description}
+Parameter.summary.local.todo=${text}\n      ✕      ${project.component(ioBrokerCG).component(${component}).description}
+Parameter.summary.firewall=${text}\n\n   ✕ = будет установлен сейчас        ✓ = уже установлено\n\n- Добавьте правило для этого экземпляра в брандмауэр Windows, чтобы разрешить получение сетевых данных.

@@ -1,0 +1,145 @@
+Installer.Welcome.Text=Welcome to the ioBroker setup wizard.\n\nioBroker is a central server for smart homes, building automation and active assisted living.\n\nWith ioBroker you get:\n\n   - a powerful but easy to manage IOT solution\n   - a user friendly interface\n   - easy integration with existing systems and services\n   - modular design\n   - web-based visualizations\n   - mobile access\n   - connectivity with Alexa, Homekit and many other smart home systems\n   - help from a large and active community\n\n\nSetup Version: ${project.version}
+
+Component.Group.global.description=Global tools
+Component.download.title=Downloading data ...
+Component.installation.title=Installation in progress. Please wait ...
+Component.decompression.title=Extracting ...
+
+Component.dotNet.explanation=Microsoft .NET 4.8
+Component.dotNet.description=Microsoft .NET 4.8 (download, approx. 112MB)
+Component.dotNet.detailedDescription=Microsoft Visual Studio 2017 Installer requires Microsoft .NET Framework version 4.5.1 or newer to run.
+Component.dotNet.download.error=Error downloading Microsoft .NET 4.8
+Component.dotNet.install.error=Error installing Microsoft .NET 4.8
+
+Component.Git.explanation=Git ${gittargetversion}
+Component.Git.description=Git ${gittargetversion} (download, approx. 46MB)
+Component.Git.detailedDescription=Git is used by npm to download additional resources
+Component.Git.download.error32=Error downloading 'https://github.com/git-for-windows/git/releases/download/v2.24.0.windows.2/Git-2.24.0.2-32-bit.exe'
+Component.Git.download.error64=Error downloading 'https://github.com/git-for-windows/git/releases/download/v2.24.0.windows.2/Git-2.24.0.2-64-bit.exe'
+Component.Git.install.error=Error installing Git ${gittargetversion}
+
+Component.Bonjour.description=Apple Bonjour and Bonjour SDK
+Component.Bonjour.progressText=Installing Apple Bonjour and Bonjour SDK
+Component.Bonjour.install.error=Error installing Apple Bonjour.
+
+Component.OpenSSL.description=OpenSSL 1.0.2q
+Component.OpenSSL.progressText=OpenSSL 1.0.2q
+
+Component.VisualStudio.explanation=Microsoft VisualStudio BuildTools 2017
+Component.VisualStudio.description=Microsoft VisualStudio BuildTools 2017 (download, approx. 1.4GB)
+Component.VisualStudio.detailedDescription=Microsoft Visual Studio 2017 installer is needed to download and install Visual Studio 2017 Build Tools.
+Component.VisualStudio.download.error=Error downloading Microsoft Visual Studio 2017 installer
+Component.VisualStudio.progressText=Microsoft VisualStudio BuildTools 2017 - downloading and installing up to 1.4GB data now
+Component.VisualStudio.install.error=Error installing Microsoft Visual Studio BuildTools 2017
+
+Component.ioBrokerCG.description=ioBroker(${instance})
+Component.ioBrokerCG.detailedDescription=ioBroker Automation Server
+
+Component.Python.description=Python 2.7.17
+Component.Python.detailedDescription=Python 2.7.17 for node-gyp build process
+Component.Python.progressText=Python 2.7.17
+
+Component.VCredist.progressText=Installing Microsoft Visual C ++ 2008 Redistributable
+Component.VCredist.install.error=Error installing Microsoft Visual C ++ 2008 Redistributable
+
+Component.NodeJS.description=Node.js 10.17.0
+Component.NodeJS.detailedDescription=Node.js 10.17.0 JavaScript Runtime Environment
+Component.NodeJS.progressText=Node.js 10.17.0
+Component.NodeJS.progressText.config=Configuring Node.js 10.17.0
+Component.NodeJS.progressText.npmregistry=Change npm registry to eastern location
+
+Component.ioBrokerCore.description=ioBroker 2.1.0
+Component.ioBrokerCore.detailedDescription=ioBroker program and databases
+Component.ioBrokerCore.progressText=ioBroker Core Server
+Component.ioBrokerCore.startMenuShortcut.cmdcomment=Open ioBroker(${instance}) command line
+Component.ioBrokerCore.startMenuShortcut.cmdname=ioBroker(${instance}) command line
+Component.ioBrokerCore.startMenuShortcut.comment=ioBroker(${instance}) in the web browser
+Component.ioBrokerCore.startMenuShortcut.name=ioBroker(${instance})
+
+Component.ioBrokerCore.init.title=ioBroker initialization ...
+Component.ioBrokerCore.init.progressText=Database installation and initial configuration
+Component.ioBrokerCore.init.error=ioBroker initialization failed.
+
+Component.ioBrokerCore.file.security=File system security
+
+Component.ioBrokerCore.service.security=Service security
+Component.ioBrokerCore.service.starttest=Register ioBroker service
+Component.ioBrokerCore.service.start=Starting ioBroker service
+Component.ioBrokerCore.service.securityerror=Critical installation error. Security settings could not be applied to service.
+
+Component.ioBrokerCore.port.starttest=Admin port
+Component.ioBrokerCore.port.progressText=Waiting for webadmin
+Component.ioBrokerCore.port.error=Critical installation error. No active ioBroker web administration-instance on port ${port_admin}. Aborting installation. See logfile.
+
+Component.ioBrokerCore.file.del=Delete temporary files
+
+postInstallationActionList.Migrate.progressText=Data migration ...
+postInstallationAction.Language.Log=Installer language code: ${installation_language_code}\nioBroker language set to: ${langCode}\nioBroker currency set to: ${langCurrency}
+
+Variable.default.instance=SmartHome
+
+Init.OSversion.throwError=This operating system version is not supported. Version must be at least Windows 7, Server 2008 R2 or newer.
+Init.Antivirus.throwError=3rd-party Antivirus detected. There are known problems with 3rd-party Antivirus programs. Please disable it temporarily. Aborting.
+Init.msicheck.error=You need Windows Installer MSI version 3.1 to run this program.
+
+finalPageAction.web.progressText=Start ioBroker web interface (http://localhost:${port_admin})
+finalPageAction.log.progressText=Show log file of installation
+finalPageAction.Update.progressText=Change Windows Update behaviour to notify user before installing updates
+
+installationAbortedAction.text=The installation was aborted. Setup information can be found in the "${installer_installation_log}" file.\n\nWould you like to open this file now?
+installationAbortedAction.logtext=Installation was aborted.
+
+Parameter.expert.title=Setup wizard
+Parameter.expert.explanation=How would you like to install ioBroker?\n\nIf you just want to install ioBroker with default settings, "Easy setup" is the right choice.\n\n"Expert setup" provides additional configuration options. Maintenance of existing ioBroker installations (for example configuration, uninstallation) is only possible in expert mode.
+Parameter.expert.easy=Easy setup
+Parameter.expert.expert=Expert setup
+
+Parameter.infoinstances.title=Information about ioBroker instances
+Parameter.infoinstances.explanation=ioBroker can be installed and executed more than one time on your computer in parallel.\n\nEvery installation is an independend ioBroker server instance and runs in isolation using its own runtime environment and configuration. For security reasons, each instance uses a separate service account and has its own firewall rules.\n\nEach service account has only rights to start as a service, read and write file access to the directory where the instance is installed and log on with restricted rights as an authenticated user.\n\nUse cases for multiple instances are the installation of different software development environments, the concurrent deployment of test and production environments, or the logical separation of individual ioBroker servers from each other.
+
+Parameter.instmode.title=Installation mode
+Parameter.instmode.description=Installation mode
+Parameter.instmode.explanation=One or more already installed ioBroker instances have been found. Would you like to add a new instance or customize an existing one?
+Parameter.instmode.add.text=Install a new instance
+Parameter.instmode.modify.text=Customize an existing instance. (Sorry, this feature is not implemented yet.)
+Parameter.instmode.modify.throwError=The functions to maintain existing instances has not been implemented in the setup yet. Later you will be able to set up multihost operation, update the js-controller or node.js, activate redis or uninstall individual instances here.
+
+Parameter.installdir.title=Instance home directory
+Parameter.installdir.description=Root folder
+Parameter.installdir.explanation=This is the first installation of ioBroker on this machine.\n\nPlease specify the root directory in which you want to install all ioBroker instances.
+Parameter.installdir.driveletter.throwError=Please use only local drives.
+Parameter.installdir.fixeddisks.throwError=Only fixed local disks can be used.
+Parameter.installdir.userprofile.throwError=Installation into user profile folders is not possible.
+
+Parameter.newinstance.title=Add an instance
+Parameter.newinstance.description=Instance name
+Parameter.newinstance.explanation=Please enter the name of the new ioBroker instance here. It can`t be changed later.\n\nUsable characters are a-z, A-Z and 0-9.
+Parameter.newinstance.chars.throwError=The instance name can only contain the characters a-z, A-Z and 0-9.
+Parameter.newinstance.exists.throwError=There is already an instance named "${insta}". Please choose a new instance name.
+
+Parameter.ports.title=Communication settings
+Parameter.ports.database.explanation=\nioBroker uses instance-specific databases to store information.\n\nAdapters access this data via free selectable network ports. Please set unique ports for this ioBroker instance now.
+Parameter.ports.database.states=Port for states database
+Parameter.ports.database.states.NaN=The network port for the states database must be a number.
+Parameter.ports.database.objects=Port for objects database
+Parameter.ports.database.objects.NaN=The network port for the objects database must be a number.
+Parameter.ports.admin.description=Port for admin web interface
+Parameter.ports.admin.explanation=\nAccess to the admin web interface also requires a unique port.
+Parameter.ports.admin.NaN=The network port for accessing the admin web interface must be a number.
+Parameter.ports.inuse=Port ${port_check} is already in use by another program.
+Parameter.ports.equal=Please use not the same ports.
+
+Parameter.migrate.title=Migration
+Parameter.migrate.explanation=An earlier ioBroker installation was found. Adapters, data, scripts, settings and visualizations of the old installation can now be automatically migrated to this instance. The old ioBroker service will be stopped and then the data is going to be copied. The old installation will not be deleted.\n\nDo you want to run the data migration now? (Dialogue is currently without function.)
+
+Parameter.summary.title=Summary of upcomming changes
+Parameter.summary.instance=- A new ioBroker instance "${instance}" will be set up.
+Parameter.summary.osver64=${text}\n\n- If possible, all components will be installed in the 64-bit version.
+Parameter.summary.osver32=${text}\n\n- All components are installed in the 32-bit version.
+Parameter.summary.folder=${text}\n\n- Installation folder for instance specific files:\n      ${installdir}\n\n- Global software components for all instances:
+Parameter.summary.global.ready=${text}\n      ✓      ${project.component(globaltools).component(${component}).description}
+Parameter.summary.global.todo=${text}\n      ✕      ${project.component(globaltools).component(${component}).description}
+Parameter.summary.local=${text}\n\n- Instance specific software components:
+Parameter.summary.local.ready=${text}\n      ✓      ${project.component(ioBrokerCG).component(${component}).description}
+Parameter.summary.local.todo=${text}\n      ✕      ${project.component(ioBrokerCG).component(${component}).description}
+Parameter.summary.firewall=${text}\n\n   ✕ = will be installed now        ✓ = is already installed\n\n- Add a rule for this instance to the Windows firewall to allow receiving network data.
